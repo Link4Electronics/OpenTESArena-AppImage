@@ -11,9 +11,9 @@
 </p>
 
 
-| Latest Stable Release | Upstream URL |
-| :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/OpenTESArena-AppImage/releases/latest) | [Click here](https://github.com/afritz1/OpenTESArena) |
+| Latest Stable Release | Latest Nightly Relase | Upstream URL |
+| :---: | :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/OpenTESArena-AppImage/releases/latest) | [Click here](https://github.com/pkgforge-dev/OpenTESArena-AppImage/releases/tag/nightly) | [Click here](https://github.com/afritz1/OpenTESArena) |
 
 </div>
 
