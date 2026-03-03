@@ -63,7 +63,4 @@ make -j$(nproc)
 mv -v otesa ../../AppDir/bin
 cd ..
 mv -v options ../AppDir/bin
-cd data
-rm -f icon.bmp
-cd ..
 mv -v data ../AppDir/bin
