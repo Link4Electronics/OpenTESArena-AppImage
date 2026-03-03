@@ -37,6 +37,8 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd ./OpenTESArena
+wget https://github.com/afritz1/OpenTESArena/releases/download/opentesarena-0.1.0/eawpats.zip
+bsdtar -xvf eawpats.zip -C data
 mkdir build && cd build
 if [ "$ARCH" = "x86_64" ]; then
 cmake .. -DCMAKE_BUILD_TYPE=ReleaseNative
@@ -51,3 +53,9 @@ cmake .. \
 fi
 make -j$(nproc)
 mv -v otesa ../../AppDir/bin
+cd ..
+mv -v options ../AppDir/bin
+cd data
+rm -f icon.bmp
+cd ..
+mv -v data ../AppDir/bin
