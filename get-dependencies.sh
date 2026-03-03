@@ -7,10 +7,11 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    cmake    \
-    libdecor \
-	openal	 \
-    sdl2     \
+    cmake   	   \
+    libdecor 	   \
+	openal	 	   \
+    sdl2     	   \
+	vulkan-headers \
     wildmidi
 
 echo "Installing debloated packages..."
