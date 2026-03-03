@@ -45,10 +45,14 @@ if [ "$ARCH" = "x86_64" ]; then
 else
 	cmake .. \
     	-DCMAKE_BUILD_TYPE=ReleaseNative \
-    	-DUSE_SSE4_1=OFF -DUSE_SSE4_2=OFF \
-    	-DUSE_AVX=OFF -DUSE_AVX2=OFF \
-    	-DUSE_AVX512=OFF -DUSE_LZCNT=OFF \
-    	-DUSE_TZCNT=OFF -DUSE_F16C=OFF \
+    	-DUSE_SSE4_1=OFF \
+		-DUSE_SSE4_2=OFF \
+    	-DUSE_AVX=OFF \
+		-DUSE_AVX2=OFF \
+    	-DUSE_AVX512=OFF \
+		-DUSE_LZCNT=OFF \
+    	-DUSE_TZCNT=OFF \
+		-DUSE_F16C=OFF \
     	-DUSE_FMADD=OFF
 fi
 make -j$(nproc)
