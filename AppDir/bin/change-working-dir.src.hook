@@ -3,6 +3,7 @@ dir=${XDG_CONFIG_HOME:-~/.config}/OpenTESArena
 mkdir -p "$dir"
 if [ ! -f "$dir"/data/Clocks.txt ]; then
   cp -r "$APPDIR"/bin/data "$dir"
+  cp -r "$APPDIR"/bin/options "$dir"
 fi
-ln -sf "$APPDIR"/bin/otesa "$dir"
+#ln -sf "$APPDIR"/bin/otesa "$dir"
 cd "$dir"
