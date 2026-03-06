@@ -5,7 +5,7 @@ if [ ! -f "$dir"/data/Clocks.txt ]; then
   cp -r "$APPDIR"/bin/data "$dir"
   cp -r "$APPDIR"/bin/options "$dir"
   MY_HOME=$(echo $HOME)
-  sed -i "s|^ArenaPaths=.*|ArenaPaths=$MY_HOME/.config/OpenTESArena/data/ARENA|" options-default.txt
+  sed -i "s|^ArenaPaths=.*|ArenaPaths=$MY_HOME/.config/OpenTESArena/data/ARENA|" "$dir"/options/options-default.txt
 fi
 #ln -sf "$APPDIR"/bin/otesa "$dir"
 cd "$dir"
