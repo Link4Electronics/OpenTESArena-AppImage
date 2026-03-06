@@ -14,6 +14,7 @@ quick-sharun ./AppDir/bin/otesa
 #echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/bin' >> ./AppDir/.env
 
 # Additional changes can be done in between here
+mkdir -p ./AppDir/bin/options
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
