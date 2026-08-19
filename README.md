@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/OpenTESArena-AppImage)](https://github.com/pkgforge-dev/OpenTESArena-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/Link4Electronics/OpenTESArena-AppImage/blob/main/AppDir/opentesarena.png" width="128" />
+  <img src="https://github.com/pkgforge-dev/OpenTESArena-AppImage/blob/main/AppDir/opentesarena.png" width="128" />
 </p>
 
 
