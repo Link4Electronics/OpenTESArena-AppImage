@@ -44,15 +44,15 @@ bsdtar -xvf eawpats.zip -C data
 mkdir build && cd build
 cmake .. \
     -DCMAKE_BUILD_TYPE=ReleaseGeneric \
-    -DUSE_SSE4_1=OFF \
-	-DUSE_SSE4_2=OFF \
-    -DUSE_AVX=OFF \
-	-DUSE_AVX2=OFF \
+    -DUSE_SSE4_1=ON \
+	-DUSE_SSE4_2=ON \
+    -DUSE_AVX=ON \
+	-DUSE_AVX2=ON \
     -DUSE_AVX512=OFF \
-	-DUSE_LZCNT=OFF \
-    -DUSE_TZCNT=OFF \
-	-DUSE_F16C=OFF \
-    -DUSE_FMADD=OFF
+	-DUSE_LZCNT=ON \
+    -DUSE_TZCNT=ON \
+	-DUSE_F16C=ON \
+    -DUSE_FMADD=ON
 make -j$(nproc)
 mv -v otesa ../../AppDir/bin
 cd ..
